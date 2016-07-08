@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+    <meta charset="UTF-8">
+    <title>Igra Note: ugani ime note</title>
+    <link rel="stylesheet" type="text/css" href="note.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+</head>
+<body>
+
+    <div id="gameFrame">
+
+        <!-- Always visible -->
+        <div id="gameTitle">
+            <h1>Igra Note</h1>
+        </div>
+
+        <!-- instructions -->
+        <div id="gameInstructions">
+            Igra ti bo pomagala izpiliti poznavanje not in njihov položaj na različnih lestvicah.
+            <br/>
+            Klikni gumb naprej in izberi note, lestvico in predznake.
+
+            <br/><br/>
+            <button id="instructionNaprej" class="btn btn-primary">Naprej</button>
+        </div>
+
+        <div id="gameSettings" hidden>
+            <h3>Nastavitve</h3>
+            Nastavitve še pridejo
+            <br/><br/>
+            <button id="settingsNaprej" class="btn btn-success">Začni</button>
+
+        </div>
+
+        <!-- canvas for "image-ish" parts -->
+        <canvas id="gameCanvas" width="850px" height="500px" hidden>
+        </canvas>
+
+        <!-- controls for game -->
+        <div id="gameDashboard" hidden>
+            izbira not itd.
+
+            <div id="gameAnswers">
+                <button id="cis" class="btn-note btn btn-lg btn-default">C<span class="theory-font">#</span></button>
+                <button id="dis" class="btn-note btn btn-lg btn-default">D<span class="theory-font">#</span></button>
+                <button id="eis" class="btn-note btn btn-lg btn-default">E<span class="theory-font">#</span></button>
+                <button id="fis" class="btn-note btn btn-lg btn-default">F<span class="theory-font">#</span></button>
+                <button id="gis" class="btn-note btn btn-lg btn-default">G<span class="theory-font">#</span></button>
+                <button id="ais" class="btn-note btn btn-lg btn-default">A<span class="theory-font">#</span></button>
+                <button id="his" class="btn-note btn btn-lg btn-default">H<span class="theory-font">#</span></button>
+                <br/>
+                <button id="c" class="btn-note btn btn-lg btn-default">C</button>
+                <button id="d" class="btn-note btn btn-lg btn-default">D</button>
+                <button id="e" class="btn-note btn btn-lg btn-default">E</button>
+                <button id="f" class="btn-note btn btn-lg btn-default">F</button>
+                <button id="g" class="btn-note btn btn-lg btn-default">G</button>
+                <button id="a" class="btn-note btn btn-lg btn-default">A</button>
+                <button id="h" class="btn-note btn btn-lg btn-default">H</button>
+                <br/>
+                <button id="ces" class="btn-note btn btn-lg btn-default">C<span class="theory-font">b</span></button>
+                <button id="des" class="btn-note btn btn-lg btn-default">D<span class="theory-font">b</span></button>
+                <button id="es" class="btn-note btn btn-lg btn-default">E<span class="theory-font">b</span></button>
+                <button id="fes" class="btn-note btn btn-lg btn-default">F<span class="theory-font">b</span></button>
+                <button id="ges" class="btn-note btn btn-lg btn-default">G<span class="theory-font">b</span></button>
+                <button id="as" class="btn-note btn btn-lg btn-default">A<span class="theory-font">b</span></button>
+                <button id="hes" class="btn-note btn btn-lg btn-default">H<span class="theory-font">b</span></button>
+            </div>
+
+            <div id="gameControl">
+
+            </div>
+
+        </div>
+    </div>
+
+    <!-- libs -->
+    <script src="https://code.jquery.com/jquery-2.2.3.min.js" integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jcanvas/16.4.1/jcanvas.js"></script>
+
+    <!-- my scripts -->
+    <script src="note.js"></script>
+</body>
+</html>

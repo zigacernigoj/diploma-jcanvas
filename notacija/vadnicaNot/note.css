@@ -1,0 +1,23 @@
+body {
+    font-size: 18px !important;
+    font-family: "Arial", "Sans Serif";
+}
+
+.btn-note {
+    width: 60px;
+}
+
+.theory-font{
+    font-family: "Arial Narrow",sans;
+    font-style: italic;
+}
+
+
+#gameFrame {
+    border: 1px solid black;
+    text-align: center;
+}
+
+#gameCanvas {
+    border: 1px solid black;
+}
