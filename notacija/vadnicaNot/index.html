@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vadnica not</title>
+    <style>
+        body {
+            font-family: "Arial", Sans-Serif;
+        }
+    </style>
+</head>
+<body>
+
+<div id="settings1a" style="position: absolute; top: 140px; left: 50px; display: none;">
+    <input type="checkbox" name="note" value="c" checked>C<br>
+    <input type="checkbox" name="note" value="d" checked>D<br>
+    <input type="checkbox" name="note" value="e" checked>E<br>
+    <input type="checkbox" name="note" value="f" checked>F<br>
+    <input type="checkbox" name="note" value="g" checked>G<br>
+    <input type="checkbox" name="note" value="a" checked>A<br>
+    <input type="checkbox" name="note" value="h" checked>H<br>
+</div>
+
+<div id="settings1b" style="position: absolute; top: 140px; left: 150px; display: none;">
+    <input type="checkbox" name="note" value="cis">Cis<br>
+    <input type="checkbox" name="note" value="dis">Dis<br>
+    <input type="checkbox" name="note" value="eis">Eis<br>
+    <input type="checkbox" name="note" value="fis">Fis<br>
+    <input type="checkbox" name="note" value="gis">Gis<br>
+    <input type="checkbox" name="note" value="ais">Ais<br>
+    <input type="checkbox" name="note" value="his">His<br>
+</div>
+
+<div id="settings1c" style="position: absolute; top: 140px; left: 250px; display: none;">
+    <input type="checkbox" name="note" value="ces">Ces<br>
+    <input type="checkbox" name="note" value="des">Des<br>
+    <input type="checkbox" name="note" value="es">Es<br>
+    <input type="checkbox" name="note" value="fes">Fes<br>
+    <input type="checkbox" name="note" value="ges">Ges<br>
+    <input type="checkbox" name="note" value="as">As<br>
+    <input type="checkbox" name="note" value="hes">Hes<br>
+</div>
+
+
+<div id="settings2" style="position: absolute; top: 140px; left: 450px; display: none;">
+    <input type="radio" name="kljuc" value="violinski" checked>violinski<br>
+    <input type="radio" name="kljuc" value="basovski">basovski<br>
+    <input type="radio" name="kljuc" value="altovski">altovski<br>
+    <input type="radio" name="kljuc" value="tenorski">tenorski<br>
+    <input type="radio" name="kljuc" value="sopranski">sopranski<br>
+</div>
+
+
+<div id="settings3" style="position: absolute; top: 420px; left: 50px; display: none;">
+    <input type="radio" name="nacin" value="neomejeno" onclick="hidePrimeriCas()" checked>neomejeno<br>
+    <input type="radio" name="nacin" value="stevilo" onclick="showPrimeri()">omeji število primerov<br>
+    <input type="radio" name="nacin" value="cas" onclick="showCas()">omeji čas<br>
+</div>
+
+<div id="canvasDiv">
+    <canvas id="gameCanvas" width="800px" height="600px">
+    </canvas>
+</div>
+<!-- libs -->
+<script src="https://code.jquery.com/jquery-2.2.3.min.js"
+        integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=" crossorigin="anonymous"></script>
+
+<!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"-->
+<!--integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"-->
+<!--crossorigin="anonymous"></script>-->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jcanvas/16.4.1/jcanvas.js"></script>
+
+<script src="https://zigacernigoj.github.io/diploma-assets/js/store+json2.min.js"></script>
+<script>
+    initStore();
+    function initStore() {
+        if (!store.enabled) {
+            alert('Local storage is not supported by your browser. Please disable "Private Mode", or upgrade to a modern browser.')
+            return;
+        }
+    }
+</script>
+
+
+<!-- my scripts -->
+<script src="script.js"></script>
+
+</body>
+</html>
